@@ -36,3 +36,9 @@ docker run --env-file .env -p 3000:3000 realtime-sync-player
 3. Put a reverse proxy (Nginx/Caddy) in front if you need HTTPS and a custom domain.
 
 If you already have a host in mind, tell me which one and I’ll tailor the exact steps.
+
+## Deployed URL
+```bash
+https://soundbridge-tean.onrender.com/room/9mhj2m
+```
+
