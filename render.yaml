@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: soundbridge
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: TRUST_PROXY
+        value: "true"
+      - key: DEFAULT_TRACK_URL
+        value: https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3
