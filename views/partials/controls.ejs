@@ -1,0 +1,33 @@
+<section class="card controls-card">
+  <div class="card-header">
+    <h2>Player Controls</h2>
+    <div class="signal" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div class="control-buttons">
+    <button id="enableAudio" class="primary">Enable Audio</button>
+    <button id="playToggle" class="ghost">Play</button>
+  </div>
+
+  <div class="volume-row">
+    <span class="volume-label">Volume</span>
+    <input id="volumeRange" class="volume-range" type="range" min="0" max="100" value="100" />
+    <span id="volumeValue">100%</span>
+  </div>
+
+  <div class="time-row">
+    <span id="currentTime">00:00</span>
+    <span id="duration">00:00</span>
+  </div>
+  <input id="seekRange" type="range" min="0" max="1000" value="0" />
+
+  <div class="alert hidden" id="errorBanner">Connection error: timeout</div>
+
+  <audio id="audio" preload="metadata"></audio>
+</section>

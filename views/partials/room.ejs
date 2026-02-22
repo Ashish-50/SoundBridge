@@ -1,0 +1,37 @@
+<section class="card room-card">
+  <h2>Room Settings</h2>
+
+  <div class="field">
+    <label for="roomInput">Room ID</label>
+    <div class="inline">
+      <input id="roomInput" type="text" placeholder="main" />
+      <button id="joinRoom" class="accent">Join</button>
+    </div>
+  </div>
+
+  <div class="field">
+    <label for="trackUrl">Track URL</label>
+    <input id="trackUrl" type="url" placeholder="https://example.com/track.mp3" value="<%= defaultTrackUrl %>" />
+  </div>
+  <button id="setTrack" class="full">Set Track</button>
+
+  <div class="listeners">
+    <div class="listeners-head">Listeners (<span id="listenerCount">0</span>)</div>
+    <ul class="listeners-list" id="listenersList"></ul>
+  </div>
+
+  <div class="field">
+    <label for="roomLink">Share this URL with others</label>
+    <div class="inline">
+      <input id="roomLink" type="text" readonly />
+      <button id="copyLink" class="ghost">Copy</button>
+    </div>
+  </div>
+
+  <div class="qr-block">
+    <div class="qr-label">Scan to join</div>
+    <div class="qr-frame">
+      <img id="qrImage" alt="Room QR code" />
+    </div>
+  </div>
+</section>
